@@ -73,11 +73,11 @@ body{
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-family: 'Viga', sans-serif;
 }
 
-h1 {
+#splash_content_holder h1 {
     font-size: 4rem;
     font-family: 'Viga', sans-serif;
     color: ivory;
@@ -92,6 +92,33 @@ header{
     justify-content: space-between;
     align-items: flex-end;
 }
+
+
+/* all non-nav buttons */
+
+button{
+    align-self: center;
+    border: none;
+    width: 12.2vw;
+    min-width: 120px;
+    height: 3.4vh;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.637);
+    /* border: 1px solid grey; */
+    transition: 0.25s;
+    cursor: pointer;
+    color: rgb(69, 70, 16);
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: rgba(121, 120, 120, 0.637);
+    color: white;
+    transition: 0.25s;
+}
+
 
 nav{
     display: flex;
@@ -123,7 +150,7 @@ nav button:hover {
 
 #splash {
     display: flex;
-    margin-top: 3%;
+    margin-top: 1.5%;
     height: 32vh;
     justify-content: center;
     margin-bottom:2%;
@@ -139,45 +166,26 @@ nav button:hover {
     background-image: url("https://picsum.photos/id/0/5616/3744");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
-
 
 #splash_content_holder button{
     margin-top: 2%;
-    border: none;
-    width: 12.2vw;
-    min-width: 120px;
-    height: 3.4vh;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    background-color: rgba(255, 255, 255, 0.637);
-    /* border: 1px solid grey; */
-    transition: 0.25s;
-    cursor: pointer;
-    color: rgb(69, 70, 16);
-    font-size: 0.9rem;
 }
-
-#splash_content_holder button:hover {
-    background-color: rgba(121, 120, 120, 0.637);
-    color: white;
-    transition: 0.25s;
-}
-
 
 
 .projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 1vh;
+    margin: 1vh 0;
     justify-content: space-between;
 }
 
 .project {
     display: flex;
-    height: 23vh;
+    cursor: pointer;
+    height: 22vh;
     margin: 0 1vw;
     flex-direction: column;
     justify-content: center;
@@ -188,26 +196,64 @@ nav button:hover {
 .project img{
     height: 20vh;
     min-height: 110px;
-    min-width: 125px;
+    min-width: 25vw;
     vertical-align: middle;
     object-fit: cover;
 
 }
 
+.project p{
+    font-family: 'Lato', sans-serif;
+    margin-top: 2%;
+    font-weight: 600;
+}
+
+
+#extender{
+    height:11vh
+}
+
 footer {
     background-color: rgb(117, 117, 117);
     overflow: hidden;
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
-    bottom: -50px;
+    bottom: -0px;
     width: 100%;
-    height: 12vh;
+    height: 11vh;
     margin-top: 1vh;
 }
 
-footer button{
-    height: 30px;
+footer div {
+    display: flex;
+    flex-direction: row;
     align-self: center;
+    margin-left: 1%;
+}
+
+footer div p{
+    align-self: center;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+
+
+.twitterlogo {
+    display: inline-block;
+    background: url(Twitter_Logo_Blue.svg) 50% 50% no-repeat;
+    background-size: 100% 100%;
+    width: 1.0em;
+    top: 0.05em;
+    transform: scale(2.5)  rotate(5deg);;
+    left: 0.02em;
+    text-indent: -9999px;
+    transition: 0.3s;
+  }
+
+
+  footer div p:hover .twitterlogo{
+    transform: scale(3) rotate(-5deg);
+    transition: 0.3s;
 }
 
