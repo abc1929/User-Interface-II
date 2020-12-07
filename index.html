@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div><h2>Jiawei Wu</h2></div>
+      <nav>
+        <button onclick="window.open('index.html')">Home</button>
+        <button onclick="window.open('about.html')">About</button>
+        <button onclick="window.open('contact.html')">Contact</button>
+        <button onclick="window.open('projects.html')">Projects</button>
+      </nav>
+    </header>
+
+    <nav class="mobilenav">
+      <button onclick="window.open('index.html')">Home</button>
+      <button onclick="window.open('about.html')">About</button>
+      <button onclick="window.open('contact.html')">Contact</button>
+      <button onclick="window.open('projects.html')">Projects</button>
+    </nav>
+
+    <section id="splash">
+      <div id="splash_content_holder">
+        <h1>Jiawei Wu</h1>
+        <button onclick="window.open('projects.html')">My Projects</button>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="project" onclick="window.open('projects.html')">
+        <img
+          src="https://picsum.photos/600/550?random=1"
+          alt=""
+          loading="lazy"
+        />
+        <p>Project 1</p>
+      </div>
+
+      <div class="project" onclick="window.open('projects.html')">
+        <img
+          src="https://picsum.photos/600/550?random=2"
+          alt=""
+          loading="lazy"
+        />
+        <p>Project 2</p>
+      </div>
+
+      <div class="project" onclick="window.open('projects.html')">
+        <img
+          src="https://picsum.photos/600/550?random=3"
+          alt=""
+          loading="lazy"
+        />
+        <p>Project 3</p>
+      </div>
+
+      <div class="project" onclick="window.open('projects.html')">
+        <img
+          src="https://picsum.photos/600/550?random=4"
+          alt=""
+          loading="lazy"
+        />
+        <p>Project 4</p>
+      </div>
+
+      <div class="project" onclick="window.open('projects.html')">
+        <img
+          src="https://picsum.photos/600/550?random=5"
+          alt=""
+          loading="lazy"
+        />
+        <p>Project 5</p>
+      </div>
+
+      <div class="project" onclick="window.open('projects.html')">
+        <img
+          src="https://picsum.photos/600/550?random=6"
+          alt=""
+          loading="lazy"
+        />
+        <p>Project 6</p>
+      </div>
+    </section>
+
+    <!-- extender so that projects content won't be blocked by fixed footer-->
+    <div id="extender"></div>
+
+    <footer>
+      <div>
+        <button onclick="window.open('contact.html')">Contact Me</button>
+        <p onclick="window.open('https://twitter.com')">
+          <span class="twitterlogo">t</span>
+        </p>
+        <!-- won't link my personal twitter here -->
+      </div>
+    </footer>
+  </body>
 </html>
